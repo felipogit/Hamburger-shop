@@ -28,7 +28,10 @@ export const Header = ({ setInputSearch, cartList, addToCart, removeFromCart, re
         <div className="container">
           <div>
             <img src={logo} alt="Logo" />
-            <img onClick={() => setCartOpen(true)} src={group} alt="Carrinho de Compras" />
+            <div className="cart-container">
+              <p>{cartList.length}</p>
+              <img onClick={() => setCartOpen(true)} src={group} alt="Carrinho de Compras" />
+            </div>
           </div>
 
           <StyledForm onSubmit={handleSubmit}>

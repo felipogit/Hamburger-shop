@@ -4,6 +4,22 @@ export const StyledHeader = styled.header`
   width: 100%;
   background-color: #f5f5f5;
 
+  .cart-container {
+    display: flex;
+
+    p{
+      height: 20px;
+      width: 20px;
+      background-color: var(--color-color-primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+    }
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -14,6 +30,8 @@ export const StyledHeader = styled.header`
     margin: 0 auto;
     width: 100%;
     padding: 2rem;
+
+
 
     flex-direction: column;
 
